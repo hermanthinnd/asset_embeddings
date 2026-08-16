@@ -1,0 +1,23 @@
+{
+  "quarters": [
+    [
+      2005,
+      1
+    ],
+    [
+      2014,
+      4
+    ],
+    [
+      2024,
+      4
+    ]
+  ],
+  "holdings_partitions": 16,
+  "minimum_degree": 20,
+  "maximum_position_weight": 0.75,
+  "maximum_embedding_dimension": 128,
+  "random_seed": 202451,
+  "test_fraction": 0.2,
+  "pipeline_version": 2
+}

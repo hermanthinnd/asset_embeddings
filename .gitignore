@@ -1,0 +1,40 @@
+# Local Python environment and caches
+.packages/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.pgpass
+config/*
+!config/*.example.*
+!config/README.md
+
+# WRDS extracts and generated numerical artifacts
+*.parquet
+*.pq
+*.feather
+*.arrow
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.joblib
+*.csv
+*.csv.gz
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.bak
+
+# Keep notebooks, source, documentation, PDFs, and rendered PNG/PDF figures.
