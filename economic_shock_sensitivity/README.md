@@ -17,3 +17,13 @@ The first application studies monetary-policy shocks. Historical high-frequency 
 9. `Economic_Shock_Sensitivity_Summary.ipynb` is a self-contained, presentation-ready narrative with frozen figures, detailed results, limitations, and notebook-level provenance.
 
 Generated data, manifests, and results are local checkpoints and are excluded from Git.
+
+## Fixed-income access audit
+
+Before beginning the proposed fixed-income extension, run the read-only metadata audit:
+
+```bash
+python economic_shock_sensitivity/wrds_fixed_income_access_audit.py
+```
+
+The script securely prompts for WRDS credentials, checks catalog and one-row `SELECT` access for likely fixed-income tables, and stores the local report under `economic_shock_sensitivity/data/wrds_fixed_income_access_audit/`. It does not download substantive datasets or retain the password.
