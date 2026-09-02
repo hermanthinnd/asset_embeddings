@@ -49,5 +49,8 @@ geopolitical_exposure/event_study/
 geopolitical_exposure/event_study_v2/
 geopolitical_exposure/embedding_expansion/
 geopolitical_exposure/embedding_expansion_v2/
+geopolitical_exposure/retrieval_benchmark/
+geopolitical_exposure/incremental_discovery/
+geopolitical_exposure/exposure_portfolios/
 
 # Keep notebooks, source, documentation, PDFs, and rendered PNG/PDF figures.

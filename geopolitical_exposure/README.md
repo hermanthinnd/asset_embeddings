@@ -15,6 +15,11 @@ The first pilot candidate is the Russian invasion of Ukraine on February 24, 202
 7. `04_Event_Study_Evaluation.ipynb` — evaluates the original pilot using frozen abnormal-return and placebo tests.
 8. `04B_Expanded_Label_Event_Study.ipynb` — evaluates the expanded labels on a common non-seed sample with controls, placebos, and multiple-testing adjustments.
 9. `Geopolitical_Exposure_Extension_Summary.ipynb` — static, presentation-style account of the rationale, exact extraction prompt, methodology, results, limitations, and conclusions.
+10. `05_Text_vs_Embedding_Incremental_Discovery.ipynb` — tests whether leave-self-out embedding scores identify event-sensitive firms whose own reviewed filings produced no direct channel label.
+11. `06_Geopolitical_Exposure_Portfolios.ipynb` — converts direct text, seed-excluded embedding expansion, characteristics, and their fixed combination into matched-size long–short portfolios for an explicitly exploratory Ukraine event test.
+12. `07_Blinded_Exposure_Retrieval_Benchmark.ipynb` — freezes a return-blind comparison of embedding-retrieved firms against covariate-matched controls and prepares identical pre-event relationship-validation packets.
+13. `07B_Blinded_Relationship_Classification.ipynb` — runs checkpointed, structured, evidence-grounded classification on the blinded candidate queue and stops for human review before unblinding.
+14. `08_Unblinded_Relationship_Discovery_Evaluation.ipynb` — freezes conservative admissibility while blinded, then compares embedding-selected candidates with matched controls using overall, channel-level, paired inference, retrieval-opportunity diagnostics, matching audits, and evidence-strength sensitivity.
 
 The V1 experiment quarantines event outcomes through Notebook 03. The 02B expansion was designed after aggregate V1 event results were inspected, so any revised same-event V2 analysis is explicitly exploratory and requires confirmation on a separate held-out event.
 
