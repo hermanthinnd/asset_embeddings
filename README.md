@@ -11,6 +11,7 @@ This repository contains an end-to-end replication of Gabaix, Koijen, Richmond, 
 - `Active_Passive_Extension.ipynb` — constructs Active Share and turnover classifications and tests embedding effectiveness across investor types.
 - `Active_Passive_Extension_Summary.ipynb` — readable, results-focused account of the extension.
 - `Pipeline_Validation_3Q.ipynb` — three-quarter pipeline validation.
+- `geopolitical_exposure/` — transcript-ready proof of concept using pre-event corporate text and holdings embeddings to identify direct and latent geopolitical exposures.
 - `src/`, `scripts/`, and `tests/` — reusable project code and supporting checks.
 
 ## Data availability
@@ -24,6 +25,8 @@ The repository retains the executable notebooks, methodological documentation, r
 1. `Replication_Summary.ipynb`
 2. `Active_Passive_Extension_Summary.ipynb`
 3. The underlying pipeline and benchmark notebooks for implementation details
+
+The geopolitical application begins with `geopolitical_exposure/00_Research_Design.ipynb` and `geopolitical_exposure/01_Event_and_Data_Audit.ipynb`. Its text adapter accepts SEC filings now and earnings-call transcripts later without changing the downstream seed, embedding, or event-study interfaces.
 
 ## Main findings
 

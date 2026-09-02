@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Point-in-time corporate document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["document_id", "firm_id", "document_type", "document_date", "available_date", "source", "text"],
+  "properties": {
+    "document_id": {"type": "string"},
+    "firm_id": {"type": "string", "description": "Stable source identifier; linked to PERMCO in a separate point-in-time crosswalk."},
+    "document_type": {"type": "string", "enum": ["10-K", "10-Q", "8-K", "earnings_call", "company_description", "other"]},
+    "document_date": {"type": "string", "format": "date"},
+    "available_date": {"type": "string", "format": "date"},
+    "source": {"type": "string"},
+    "section": {"type": ["string", "null"]},
+    "text": {"type": "string", "minLength": 1},
+    "source_uri": {"type": ["string", "null"]},
+    "content_sha256": {"type": ["string", "null"]}
+  }
+}

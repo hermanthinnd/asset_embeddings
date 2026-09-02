@@ -1,0 +1,21 @@
+{
+  "status": "candidate_pending_data_audit",
+  "event_id": "russia_ukraine_invasion_2022",
+  "event_name": "Russian invasion of Ukraine",
+  "event_date": "2022-02-24",
+  "information_cutoff": "2022-02-23",
+  "preferred_holdings_snapshot": "2021Q4",
+  "primary_outcome_windows": [[0, 1], [0, 5], [1, 20]],
+  "estimation_window": [-250, -30],
+  "channels": [
+    {"channel": "russia_ukraine_operations_revenue", "expected_direction": "negative"},
+    {"channel": "european_energy_dependence", "expected_direction": "negative"},
+    {"channel": "oil_gas_production", "expected_direction": "positive"},
+    {"channel": "defense_demand", "expected_direction": "positive"},
+    {"channel": "agriculture_fertilizer", "expected_direction": "ambiguous"},
+    {"channel": "european_banking_sanctions", "expected_direction": "negative"},
+    {"channel": "shipping_logistics", "expected_direction": "negative"},
+    {"channel": "sanctions_sensitive_supply_chain", "expected_direction": "negative"}
+  ],
+  "selection_rule": "Finalize only if pre-event text, 2021Q4 embedding, identifier, and return coverage pass the frozen audit thresholds; do not inspect event returns during selection."
+}

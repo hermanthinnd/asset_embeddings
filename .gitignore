@@ -37,4 +37,17 @@ logs/
 *.tmp
 *.bak
 
+# Geopolitical text corpus and API outputs (local/licensed/sensitive)
+geopolitical_exposure/documents/raw/
+geopolitical_exposure/documents/processed/
+geopolitical_exposure/results/
+geopolitical_exposure/manifests/*.json
+!geopolitical_exposure/manifests/README.md
+geopolitical_exposure/text_expansion_v2/
+geopolitical_exposure/event_data/
+geopolitical_exposure/event_study/
+geopolitical_exposure/event_study_v2/
+geopolitical_exposure/embedding_expansion/
+geopolitical_exposure/embedding_expansion_v2/
+
 # Keep notebooks, source, documentation, PDFs, and rendered PNG/PDF figures.
