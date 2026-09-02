@@ -47,10 +47,15 @@ geopolitical_exposure/text_expansion_v2/
 geopolitical_exposure/event_data/
 geopolitical_exposure/event_study/
 geopolitical_exposure/event_study_v2/
+economic_shock_sensitivity/data/
+economic_shock_sensitivity/results/
+economic_shock_sensitivity/manifests/
 geopolitical_exposure/embedding_expansion/
 geopolitical_exposure/embedding_expansion_v2/
 geopolitical_exposure/retrieval_benchmark/
 geopolitical_exposure/incremental_discovery/
 geopolitical_exposure/exposure_portfolios/
+geopolitical_exposure/directional_centroid/
+geopolitical_exposure/matched_contrastive/
 
 # Keep notebooks, source, documentation, PDFs, and rendered PNG/PDF figures.

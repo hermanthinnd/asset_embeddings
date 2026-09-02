@@ -20,6 +20,8 @@ The first pilot candidate is the Russian invasion of Ukraine on February 24, 202
 12. `07_Blinded_Exposure_Retrieval_Benchmark.ipynb` — freezes a return-blind comparison of embedding-retrieved firms against covariate-matched controls and prepares identical pre-event relationship-validation packets.
 13. `07B_Blinded_Relationship_Classification.ipynb` — runs checkpointed, structured, evidence-grounded classification on the blinded candidate queue and stops for human review before unblinding.
 14. `08_Unblinded_Relationship_Discovery_Evaluation.ipynb` — freezes conservative admissibility while blinded, then compares embedding-selected candidates with matched controls using overall, channel-level, paired inference, retrieval-opportunity diagnostics, matching audits, and evidence-strength sensitivity.
+15. `09_Directional_Geopolitical_Embedding.ipynb` — tests an outcome-free beneficiary-versus-adverse centroid direction with leave-one-out validation, permutation inference, conventional baselines, industry residualization, investor-group comparisons, dimension sensitivity, and mixed-firm diagnostics.
+16. `10_Matched_Pairwise_Contrastive_Learning.ipynb` — learns a regularized direction from industry-and-characteristic-matched positive-minus-negative pairs, using leave-one-pair-out validation, within-pair sign-flip inference, exact-industry robustness, and no event returns.
 
 The V1 experiment quarantines event outcomes through Notebook 03. The 02B expansion was designed after aggregate V1 event results were inspected, so any revised same-event V2 analysis is explicitly exploratory and requires confirmation on a separate held-out event.
 
