@@ -40,5 +40,6 @@ Never paste an API key into chat, source code, notebooks, configuration files, o
 Raw documents, processed text, model responses, manifests containing row-level results, and generated numerical outputs are excluded from Git.
 
 The critical-minerals work remains nested here because it is an application of the same text-to-seed and holdings-embedding framework. Its detailed sequence, main results, and interpretation limits are documented in `sp500_critical_minerals/README.md`.
+The presentation-ready entry point is `sp500_critical_minerals/Critical_Minerals_Extension_Summary.ipynb`.
 
 See `API_AND_DOCUMENT_SETUP.md` for secure key configuration and the small transcript-test handoff format.

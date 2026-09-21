@@ -31,6 +31,7 @@ The repository retains the executable notebooks, methodological documentation, r
 The geopolitical application begins with `geopolitical_exposure/00_Research_Design.ipynb` and `geopolitical_exposure/01_Event_and_Data_Audit.ipynb`. Its text adapter accepts SEC filings now and earnings-call transcripts later without changing the downstream seed, embedding, or event-study interfaces.
 
 For the completed critical-minerals application, begin with `geopolitical_exposure/sp500_critical_minerals/README.md`. The repository contains the executed notebooks, versioned prompts and schemas, notebook builders, and selected figures. Raw SEC filings, model-response envelopes, WRDS extracts, and row-level generated artifacts remain local.
+Its presentation-ready summary is `geopolitical_exposure/sp500_critical_minerals/Critical_Minerals_Extension_Summary.ipynb`.
 
 ## Main findings
 

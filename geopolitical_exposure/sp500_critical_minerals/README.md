@@ -3,6 +3,9 @@
 This extension compares direct SEC-filing exposure extraction, embedding-only
 discovery, and a prespecified hybrid signal within the historical S&P 500.
 
+For a presentation-ready account of the complete design, chronology, results,
+and limitations, begin with `Critical_Minerals_Extension_Summary.ipynb`.
+
 The experiment is staged to keep information and spending boundaries explicit:
 
 1. `12A_SP500_Point_in_Time_Universe.ipynb` freezes historical constituents,
