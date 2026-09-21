@@ -1,0 +1,18 @@
+{
+  "type": "object", "additionalProperties": false,
+  "properties": {
+    "firm_id": {"type": "string"},
+    "quarter": {"type": "string"},
+    "has_eligible_exposure": {"type": "boolean"},
+    "abstention_reason": {"type": "string"},
+    "positive_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "negative_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "net_score": {"type": "number", "minimum": -1, "maximum": 1},
+    "quarterly_change": {"type": "string", "enum": ["new", "persistent", "strengthened", "weakened", "reversed", "resolved", "unclear"]},
+    "assessment": {"type": "string"},
+    "mechanisms": {"type": "array", "items": {"type": "object", "additionalProperties": false, "properties": {
+      "mechanism": {"type": "string"}, "direction": {"type": "string", "enum": ["positive", "negative", "mixed", "unclear"]}, "strength": {"type": "number", "minimum": 0, "maximum": 1}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}, "change_status": {"type": "string", "enum": ["new", "persistent", "strengthened", "weakened", "reversed", "resolved", "unclear"]}, "controlling_document_id": {"type": "string"}, "evidence_passage_id": {"type": "string"}, "rationale": {"type": "string"}
+    }, "required": ["mechanism", "direction", "strength", "confidence", "change_status", "controlling_document_id", "evidence_passage_id", "rationale"]}}
+  },
+  "required": ["firm_id", "quarter", "has_eligible_exposure", "abstention_reason", "positive_score", "negative_score", "net_score", "quarterly_change", "assessment", "mechanisms"]
+}

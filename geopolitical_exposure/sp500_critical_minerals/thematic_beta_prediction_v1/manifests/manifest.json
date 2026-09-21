@@ -1,0 +1,14 @@
+{
+  "all_primary_gates_passed": false,
+  "design_sha256": "3b20518c6da8bb39ac34d1dc062deb34e0f0b168a77b0be4be3bbe43facf4b4f",
+  "mean_embedding_beyond_text_oos_r2": -0.007186773813611214,
+  "panel_rows": 1627,
+  "portfolio_results_accessed": false,
+  "stage": "exposure_scores_vs_thematic_beta_v1",
+  "vintages": [
+    "2024q1",
+    "2024q2",
+    "2024q3",
+    "2024q4"
+  ]
+}

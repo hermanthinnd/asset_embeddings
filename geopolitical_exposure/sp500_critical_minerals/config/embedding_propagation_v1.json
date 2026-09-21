@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "primary_embedding": "rs_l_min",
+  "dimensions": 10,
+  "similarity": "cosine",
+  "analysis_support": "intersection of point-in-time S&P 500 membership and valid quarterly embeddings",
+  "positive_seed_score_minimum": 0.30,
+  "neighbors_per_seed": 5,
+  "null_definition": "95th percentile of cosine similarity across deterministic random distinct firm pairs within the quarterly common-support universe",
+  "null_quantile": 0.95,
+  "null_pairs": 100000,
+  "candidate_score": "maximum over nominating seeds of cosine_similarity times positive_seed_score",
+  "direct_seed_exclusion": "exclude all direct positive LLM seeds from embedding-only candidates",
+  "primary_candidate_cardinality": "equal to positive LLM seeds within common embedding support",
+  "placebo_portfolios": 100,
+  "placebo_rule": "draw equal-count pseudo-seeds from non-seed common-support firms and apply identical propagation and cardinality rules",
+  "random_seed": 20240904,
+  "returns_accessed": false
+}

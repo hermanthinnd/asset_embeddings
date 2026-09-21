@@ -1,0 +1,24 @@
+{
+  "design_version": "critical_minerals_scenario_exposure_v1",
+  "source_relationships": "resolved_extraction_v2_1/final_validated_document_exposures.parquet",
+  "scenarios": [
+    {"id": "strategic_demand_expansion", "definition": "A sustained increase in real demand for critical minerals and mineral-intensive products, holding mineral supply, policy and broad market conditions fixed."},
+    {"id": "mineral_price_increase", "definition": "An unexpected persistent increase in prices of the critical minerals relevant to the disclosed relationship, holding physical availability, policy and broad market conditions fixed."},
+    {"id": "physical_supply_disruption", "definition": "An unexpected reduction in physical availability or reliability of relevant critical-mineral supply, holding final demand and broad market conditions fixed."},
+    {"id": "western_policy_support", "definition": "An increase in Western subsidies, procurement, financing, tax support or permitting assistance for secure critical-mineral supply chains, holding commodity prices and broad demand fixed."},
+    {"id": "western_supply_chain_reorientation", "definition": "A shift in Western sourcing, processing and procurement away from geopolitically concentrated or restricted jurisdictions toward domestic or allied supply, holding broad demand fixed."}
+  ],
+  "direction_object": "expected effect on operating cash flow or enterprise value through the disclosed relationship, not expected stock return",
+  "directions": [-1, 0, 1],
+  "firm_scenario_aggregation": "strongest eligible positive component plus strongest eligible negative component, clipped to [-1,1]",
+  "component_formula": "direction * intensity * confidence * directness_weight * materiality_weight * disclosure_status_weight",
+  "directness_weights": {"direct": 1.0, "first_order_indirect": 0.75, "second_order_indirect": 0.5},
+  "materiality_weights": {"core": 1.0, "meaningful": 0.75, "incidental": 0.0, "insufficient": 0.0},
+  "disclosure_status_weights": {"existing": 1.0, "planned": 0.75, "contingent": 0.5, "hypothetical": 0.0},
+  "embedding": {"model": "rs_l_min", "dimensions": 10, "similarity": "cosine", "threshold": "quarter-specific frozen random-pair q95", "threshold_adjustment": "max(0,(cosine-q95)/(1-q95))", "seed_self_exclusion": true},
+  "hybrid_weight": {"text": 0.5, "embedding": 0.5},
+  "outcomes_accessed": false,
+  "validation_sample_target": 100,
+  "api_model": "gpt-5.6-terra",
+  "guarded_documents": 10
+}

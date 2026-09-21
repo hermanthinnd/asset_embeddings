@@ -1,0 +1,19 @@
+{
+  "common_cutoff": "2025-12-31",
+  "forward_target_days": 252,
+  "historical_window_days": 252,
+  "minimum_observations": 126,
+  "missing_return_policy": "retain CRSP numeric observations only; no imputation",
+  "multiple_share_class_aggregation": "lagged-market-equity weighted PERMNO return within PERMCO",
+  "portfolio_results_accessed": false,
+  "primary_factor": "broad_cm_equity_ex_market",
+  "return_frequency": "daily",
+  "robustness_factors": [
+    "producer_ex_market",
+    "base_metals_raw",
+    "materials_ex_market"
+  ],
+  "scenario_13a_scores_accessed": false,
+  "time_series_model": "OLS: firm return ~ intercept + SPY return + thematic factor",
+  "version": "firm_thematic_beta_v1"
+}

@@ -1,0 +1,17 @@
+{
+  "benchmarks": [
+    "SPY market_return",
+    "equal-weight COPX/LIT/REMX broad_cm_equity_return"
+  ],
+  "cap": null,
+  "direct_seed_sign": "sign(net_score); overrides embedding sign",
+  "long_leg": "all positive direct seeds plus all positive supported nonseeds",
+  "no_outcome_based_selection": true,
+  "nonseed_admission": "embedding_signed != 0, inherited from frozen q95 random-pair threshold",
+  "path_return": "daily equal-weight diagnostic",
+  "primary_return": "cross-sectional mean of firm three-month buy-and-hold returns",
+  "short_leg": "all negative direct seeds plus all negative supported nonseeds",
+  "version": "uncapped_seeded_embedding_v1",
+  "weighting": "equal weight within leg",
+  "windows": "unchanged sp500_experiment_design_v1 forward months"
+}

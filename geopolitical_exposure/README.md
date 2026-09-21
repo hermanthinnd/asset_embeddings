@@ -22,6 +22,10 @@ The first pilot candidate is the Russian invasion of Ukraine on February 24, 202
 14. `08_Unblinded_Relationship_Discovery_Evaluation.ipynb` — freezes conservative admissibility while blinded, then compares embedding-selected candidates with matched controls using overall, channel-level, paired inference, retrieval-opportunity diagnostics, matching audits, and evidence-strength sensitivity.
 15. `09_Directional_Geopolitical_Embedding.ipynb` — tests an outcome-free beneficiary-versus-adverse centroid direction with leave-one-out validation, permutation inference, conventional baselines, industry residualization, investor-group comparisons, dimension sensitivity, and mixed-firm diagnostics.
 16. `10_Matched_Pairwise_Contrastive_Learning.ipynb` — learns a regularized direction from industry-and-characteristic-matched positive-minus-negative pairs, using leave-one-pair-out validation, within-pair sign-flip inference, exact-industry robustness, and no event returns.
+17. `quarterly_sec_pilot/11A_Quarterly_SEC_Pilot_Corpus.ipynb` — begins a separate SEC-only, 100-firm quarterly pilot for 2024, freezing the sample and point-in-time 10-K/10-Q information sets before any exposure extraction or outcome evaluation.
+18. `quarterly_sec_pilot/11B_Quarterly_SEC_Exposure_Extraction.ipynb` — freezes a detailed critical-minerals ontology and evidence contract, retrieves point-in-time passages, runs guarded structured extraction, and separates provisional exposure levels from quarter-to-quarter changes.
+19. `quarterly_sec_pilot/11C_Three_Seed_Specification_Propagation.ipynb` through `11F_2025_2026_Forward_Performance.ipynb` — compare broad-market, sector-enriched, and combined seed designs; evaluate quarterly portfolios; run robustness checks; and examine forward performance.
+20. `sp500_critical_minerals/12A_SP500_Point_in_Time_Universe.ipynb` through `14G_2024Q1_Portfolio_Persistence_Through_2026.ipynb` — scale the critical-minerals workflow to point-in-time S&P 500 universes, calibrate and run the evidence-grounded LLM extraction, propagate labels through embeddings, freeze portfolios, test thematic-factor sensitivity, and evaluate the 2024Q1 portfolios through August 2026.
 
 The V1 experiment quarantines event outcomes through Notebook 03. The 02B expansion was designed after aggregate V1 event results were inspected, so any revised same-event V2 analysis is explicitly exploratory and requires confirmation on a separate held-out event.
 
@@ -34,5 +38,7 @@ Any document source must normalize to the schema in `schemas/document_schema.jso
 Never paste an API key into chat, source code, notebooks, configuration files, or committed outputs. Export `OPENAI_API_KEY` in the local shell. The extraction pipeline will use the Responses API with a strict JSON schema, `store=False`, deterministic prompts where supported, local response logging, and explicit model/prompt hashes.
 
 Raw documents, processed text, model responses, manifests containing row-level results, and generated numerical outputs are excluded from Git.
+
+The critical-minerals work remains nested here because it is an application of the same text-to-seed and holdings-embedding framework. Its detailed sequence, main results, and interpretation limits are documented in `sp500_critical_minerals/README.md`.
 
 See `API_AND_DOCUMENT_SETUP.md` for secure key configuration and the small transcript-test handoff format.

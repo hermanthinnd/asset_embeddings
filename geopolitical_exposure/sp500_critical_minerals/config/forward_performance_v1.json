@@ -1,0 +1,16 @@
+{
+  "design_version": "sp500_critical_minerals_forward_performance_v1",
+  "primary_horizon": "three pre-specified calendar months per vintage",
+  "primary_return_convention": "compound each firm's three monthly CRSP returns, then equally weight firms",
+  "required_firm_months": 3,
+  "primary_portfolios": ["llm_only_common_support", "embedding_only_primary"],
+  "internal_benchmark": "not available from the frozen checkpoint; an equal-weighted available-universe common-support return is retained as a descriptive diagnostic only",
+  "incremental_estimand": "embedding-only minus LLM-only return",
+  "placebo_estimand": "embedding-only relative to 100 frozen matched-cardinality placebo portfolios",
+  "pooled_placebo_inference": "four-vintage mean compared with matched placebo-draw means",
+  "empirical_p_value": "(1 + count(placebo >= observed)) / (1 + draws), one-sided",
+  "critical_minerals_benchmark": "not used because none was frozen before outcome access",
+  "factor_alpha": "not primary because each vintage contains only three monthly observations",
+  "delisting_return_caveat": "no separate delisting-return field exists in the cached return checkpoint",
+  "outcomes_accessed_when_contract_written": false
+}

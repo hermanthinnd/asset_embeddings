@@ -1,0 +1,9 @@
+{
+  "contract_sha256": "27c319648c2528b4e7a167e5e11c647695e21f1decc00c1a2757bd2385db2878",
+  "nominations": 262,
+  "placebo_rows": 5700,
+  "primary_portfolio_rows": 114,
+  "returns_accessed": false,
+  "stage": "embedding_propagation_v1",
+  "vintages": 4
+}

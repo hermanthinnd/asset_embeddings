@@ -1,0 +1,15 @@
+{
+  "all_gates_passed": true,
+  "calendar_days": 248,
+  "design_sha256": "4f9b16bdb335c319e9bbce952a614c9262744a082c42cd411763950497512481",
+  "methods": [
+    "consensus",
+    "embedding",
+    "hybrid",
+    "hybrid_long_only",
+    "llm",
+    "matched_text"
+  ],
+  "reselected": false,
+  "stage": "factor_controlled_portfolio_attribution_v1"
+}

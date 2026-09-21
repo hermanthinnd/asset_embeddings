@@ -57,5 +57,25 @@ geopolitical_exposure/incremental_discovery/
 geopolitical_exposure/exposure_portfolios/
 geopolitical_exposure/directional_centroid/
 geopolitical_exposure/matched_contrastive/
+geopolitical_exposure/quarterly_sec_pilot/data/
+geopolitical_exposure/quarterly_sec_pilot/results/
+geopolitical_exposure/quarterly_sec_pilot/manifests/
+geopolitical_exposure/quarterly_sec_pilot/sector_supplement/
+
+# S&P 500 critical-minerals extension: local source documents and model outputs
+geopolitical_exposure/sp500_critical_minerals/data/
+geopolitical_exposure/sp500_critical_minerals/manifests/
+geopolitical_exposure/sp500_critical_minerals/results/
+geopolitical_exposure/sp500_critical_minerals/production_extraction_v2_1/
+geopolitical_exposure/sp500_critical_minerals/resolved_extraction_v2_1/
+geopolitical_exposure/sp500_critical_minerals/prompt_calibration/
+geopolitical_exposure/sp500_critical_minerals/scenario_exposure_v1/
+geopolitical_exposure/sp500_critical_minerals/scenario_adjudication_v1/
+geopolitical_exposure/sp500_critical_minerals/scenario_adjudication_v1_invalid_simplified_scenarios/
+geopolitical_exposure/sp500_critical_minerals/**/raw/
+
+# Privately supplied reference prompts are retained locally, not redistributed.
+economic_shock_sensitivity/prompt_template_comps*.txt
+economic_shock_sensitivity/prompt_template_valuation.txt
 
 # Keep notebooks, source, documentation, PDFs, and rendered PNG/PDF figures.

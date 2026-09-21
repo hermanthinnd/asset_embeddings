@@ -1,0 +1,53 @@
+{
+  "design_version": "sp500_critical_minerals_v1",
+  "research_question": "Do holdings-based asset embeddings add incremental discovery and forward-return information to point-in-time LLM extraction of critical-minerals exposure from SEC filings?",
+  "universe": "Historical S&P 500 constituents at each quarterly information cutoff",
+  "vintages": [
+    {"label": "2024q1", "cutoff": "2024-03-31", "investable_start": "2024-06-01", "forward_months": ["2024-06", "2024-07", "2024-08"]},
+    {"label": "2024q2", "cutoff": "2024-06-30", "investable_start": "2024-09-01", "forward_months": ["2024-09", "2024-10", "2024-11"]},
+    {"label": "2024q3", "cutoff": "2024-09-30", "investable_start": "2024-12-01", "forward_months": ["2024-12", "2025-01", "2025-02"]},
+    {"label": "2024q4", "cutoff": "2024-12-31", "investable_start": "2025-04-01", "forward_months": ["2025-04", "2025-05", "2025-06"]}
+  ],
+  "filing_forms": ["10-K", "10-Q"],
+  "filing_start": "2023-01-01",
+  "information_lag_calendar_days": 60,
+  "text_model": {
+    "prompt": "critical_minerals_extraction_prompt_v1.md",
+    "ontology": "critical_minerals_ontology_v1.json",
+    "schema": "critical_minerals_exposure_schema_v1.json",
+    "internet_access": false,
+    "return_information_available": false,
+    "cache_unit": "content_sha256_plus_prompt_sha256_plus_schema_sha256"
+  },
+  "representations": ["rs_binary", "rs_l_min"],
+  "embedding_dimension": 10,
+  "portfolio_methods": ["llm_only", "embedding_only", "hybrid"],
+  "primary_portfolio_rule": "matched_disclosure_count_by_quarter_and_sign",
+  "fixed_cardinality_robustness_per_leg": [10, 20, 30],
+  "embedding_seed_exclusion": "exclude_all_direct_LLM_seed_firms",
+  "hybrid_rule": "equal_weighted_zscore_of_direct_text_and_embedding_scores_within_quarter",
+  "portfolio_weighting": ["equal_weight", "value_weight_robustness"],
+  "required_diagnostics": [
+    "firm_count_by_leg",
+    "effective_number_of_holdings",
+    "industry_concentration",
+    "market_cap_distribution",
+    "beta",
+    "volatility",
+    "turnover",
+    "pairwise_portfolio_overlap"
+  ],
+  "benchmarks": ["sp500_total_return", "crsp_value_weighted_market", "frozen_critical_minerals_benchmark_to_be_selected_before_outcomes"],
+  "primary_return_convention": "firm_level_three_month_buy_and_hold_then_cross_sectional_average",
+  "monthly_rebalanced_return": "robustness_only",
+  "outcomes_accessed_during_universe_and_corpus_construction": false,
+  "decision_gates": {
+    "minimum_point_in_time_sp500_firms_per_vintage": 490,
+    "minimum_permco_mapping_rate": 0.99,
+    "minimum_cik_mapping_rate": 0.95,
+    "minimum_filing_coverage_rate": 0.95,
+    "minimum_quote_validation_rate": 0.95,
+    "api_pilot_documents": 25,
+    "api_full_run_requires_manual_enable": true
+  }
+}

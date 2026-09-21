@@ -1,0 +1,73 @@
+{
+  "artifacts": [
+    {
+      "artifact": "characteristic_industry_adjusted_results.parquet",
+      "bytes": 6031,
+      "rows": 24,
+      "sha256": "415aa61224f42ca82905d989b4770897437cd479b543d410539d94a0c7165dde"
+    },
+    {
+      "artifact": "portfolio_cutoff_sensitivity.parquet",
+      "bytes": 8539,
+      "rows": 72,
+      "sha256": "76e9b767478c500a2d13f64e382d98ae4495559f04b94bd1965b2b599d03fd31"
+    },
+    {
+      "artifact": "direct_text_seed_portfolios.parquet",
+      "bytes": 5754,
+      "rows": 6,
+      "sha256": "0a1707251afd4bb62298b2a67d778053fde8f5f18300a8c46f66630b7a8dbe7a"
+    },
+    {
+      "artifact": "equal_count_enriched_seed_results.parquet",
+      "bytes": 68996,
+      "rows": 4000,
+      "sha256": "2e6078a09453bfdb0114d6ae8530d9c97a78e63a5a5aa43700e1d312b4342a62"
+    },
+    {
+      "artifact": "equal_count_enriched_seed_summary.parquet",
+      "bytes": 7023,
+      "rows": 8,
+      "sha256": "6f769ff28253e78e06bcede4b633511605354fb1efe1c633a73f8f9eeeb815bf"
+    },
+    {
+      "artifact": "dynamic_results_multiple_testing_adjusted.parquet",
+      "bytes": 8283,
+      "rows": 24,
+      "sha256": "bb2c6634ab6b0651a8c72e08cdc4d0b557f1255504de957a84ce42437eba3d6b"
+    },
+    {
+      "artifact": "robustness_decision_table.parquet",
+      "bytes": 2761,
+      "rows": 4,
+      "sha256": "7dd6b2914991d49df084d4aae731b4a92b54bdb03602124b00c077857712386e"
+    }
+  ],
+  "confirmatory_status": false,
+  "controls": [
+    "beta_60m_paper",
+    "log_market_equity",
+    "log_book_to_market",
+    "at_gr1_paper",
+    "gp_at_paper",
+    "momentum_12_1",
+    "sic2"
+  ],
+  "fdr_method": "Benjamini-Hochberg",
+  "industry_snapshot": "2024q4",
+  "matched_seed_repetitions": 500,
+  "permutation_repetitions": 500,
+  "portfolio_tail_fractions": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "primary_vintages": [
+    "2024q1",
+    "2024q2"
+  ],
+  "reason": "only two complete forward periods",
+  "sha256": "5857d5a977615d560564298543b90fe67e7ca5108f29a7bd3571dcee07a69895",
+  "stage": "quarterly_sec_embedding_robustness_v1",
+  "upstream_evaluation_sha256": "fec4b1cd198968635d3912431cfc3df9b5c9fa109435788f45e39574769c511d"
+}

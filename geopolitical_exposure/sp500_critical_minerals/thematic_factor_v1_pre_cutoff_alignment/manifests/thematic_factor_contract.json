@@ -1,0 +1,44 @@
+{
+  "end_exclusive": "2026-01-10",
+  "firm_returns_accessed": false,
+  "frequency": "daily_close_to_close_total_return",
+  "frozen_before_download": true,
+  "interpretation": "investable equity-theme factor; not a pure commodity-price shock",
+  "market_ticker": "SPY",
+  "missing_policy": "complete_case_no_dynamic_reweighting",
+  "portfolio_results_accessed": false,
+  "prices": "split_and_distribution_adjusted",
+  "primary_formula": "equal_weight(COPX,LIT,REMX)-SPY",
+  "primary_name": "broad_cm_equity_ex_market",
+  "primary_tickers": [
+    "COPX",
+    "LIT",
+    "REMX"
+  ],
+  "robustness": {
+    "base_metals_ex_market": {
+      "formula": "DBB-SPY",
+      "tickers": [
+        "DBB"
+      ]
+    },
+    "materials_ex_market": {
+      "formula": "XME-SPY",
+      "tickers": [
+        "XME"
+      ]
+    },
+    "producer_ex_market": {
+      "formula": "equal_weight(COPX,REMX)-SPY",
+      "tickers": [
+        "COPX",
+        "REMX"
+      ]
+    }
+  },
+  "signal_inputs_accessed": false,
+  "standardization": "none_for_regressions",
+  "start": "2022-01-01",
+  "version": "critical_minerals_thematic_factor_v1",
+  "winsorization": "none"
+}

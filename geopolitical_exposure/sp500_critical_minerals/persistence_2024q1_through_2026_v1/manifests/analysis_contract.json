@@ -1,0 +1,23 @@
+{
+  "critical_minerals_benchmark": "equal-weight daily returns of COPX, LIT, REMX",
+  "end_inclusive": "2026-08-31",
+  "final_horizon": "through 2026-08-31",
+  "horizons_months": [
+    3,
+    6,
+    12,
+    18,
+    24
+  ],
+  "interpretation": "post-primary persistence robustness; not a pre-specified independent test",
+  "market_benchmark": "SPY",
+  "membership": "all previously frozen 2024Q1 portfolios; no return-based reselection",
+  "minimum_daily_absolute_weight_coverage": 0.95,
+  "portfolio_return_rule": "constant target weights; observed names renormalized separately within long and short legs",
+  "return_source": "Yahoo Finance adjusted daily prices via yfinance; repair=True",
+  "risk_free_proxy": "^IRX annualized 13-week Treasury yield divided by 100 and 252",
+  "start": "2024-06-03",
+  "version": "persistence_2024q1_through_august_2026_v1",
+  "vintage": "2024q1",
+  "yahoo_end_exclusive": "2026-09-01"
+}

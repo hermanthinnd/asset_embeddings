@@ -1,0 +1,8 @@
+{
+  "all_gates_passed": true,
+  "contract_sha256": "3ca9e7bd0c4b9a2cf55fb701d1f5a5241ec08de7da79d4edd33e3a6375f92d48",
+  "minimum_long_firms": 2,
+  "minimum_short_firms": 15,
+  "outcomes_previously_viewed": true,
+  "stage": "text_embedding_consensus_v1"
+}

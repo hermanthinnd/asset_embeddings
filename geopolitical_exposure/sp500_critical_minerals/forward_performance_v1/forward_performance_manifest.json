@@ -1,0 +1,79 @@
+{
+  "all_gates_passed": true,
+  "artifacts": [
+    {
+      "artifact": "forward_performance_gates.parquet",
+      "bytes": 2893,
+      "rows": 5,
+      "sha256": "9b4e36dfb54203a51efa0f347c54ed4eaf0d965a30d3900ed076fb961af99f8e"
+    },
+    {
+      "artifact": "input_hash_audit.parquet",
+      "bytes": 3645,
+      "rows": 4,
+      "sha256": "5e8a384693fbcad8634fae0e2a55c94d057c7723c293a6eed692225c15286f8c"
+    },
+    {
+      "artifact": "matched_placebo_returns.parquet",
+      "bytes": 8651,
+      "rows": 400,
+      "sha256": "881212bafa921e74a50066523e4230ccf0b01330c7055218c5cd16889a3b73d4"
+    },
+    {
+      "artifact": "matched_placebo_summary.parquet",
+      "bytes": 6151,
+      "rows": 4,
+      "sha256": "2ab30f59789c51b6113c9b355e58460619aac89e1369be0b9d252775af00913a"
+    },
+    {
+      "artifact": "pooled_placebo_distribution.parquet",
+      "bytes": 3271,
+      "rows": 100,
+      "sha256": "d076db139746a521d2557cfedfce917a6292cc565144dee3f73c2d682bed652a"
+    },
+    {
+      "artifact": "pooled_placebo_summary.parquet",
+      "bytes": 4990,
+      "rows": 1,
+      "sha256": "f903a3c725ce146d2925f81b80f0488af125c5042f9747ef2594e390cf60a443"
+    },
+    {
+      "artifact": "primary_paired_comparison.parquet",
+      "bytes": 3223,
+      "rows": 4,
+      "sha256": "9eebfafb29a5a43aa1a6fcc3ca1a342cad3ca20b1ee0aae12bfbcbe561d17e77"
+    },
+    {
+      "artifact": "primary_portfolio_results.parquet",
+      "bytes": 5904,
+      "rows": 8,
+      "sha256": "81cde1d1cf920dab117fb20fc481b75bf9876237766af418482f303cb4d7f09c"
+    },
+    {
+      "artifact": "primary_portfolio_returns.png",
+      "bytes": 64929,
+      "rows": null,
+      "sha256": "65bddd7d7b51e5ec2e817a4152d5ae2d855d8630cc062fb60a2f7f5482e7041f"
+    },
+    {
+      "artifact": "return_coverage_diagnostics.parquet",
+      "bytes": 3640,
+      "rows": 8,
+      "sha256": "0e8eaffd2e311a18bc6f224ec09caedaa50ab8670e3c05f9e0d4e64f379235d1"
+    }
+  ],
+  "contract_sha256": "a974564a3f0487847cb80954a7963718d9323aa5823abb3bd49da71a9ca7cb5e",
+  "limitations": [
+    "four vintages",
+    "three-month primary horizon",
+    "no separate delisting-return field",
+    "no pre-frozen thematic index"
+  ],
+  "stage": "locked_forward_performance_v1",
+  "vintages": [
+    "2024q1",
+    "2024q2",
+    "2024q3",
+    "2024q4"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "alphas": [
+    0.01,
+    0.1,
+    1,
+    10,
+    100,
+    1000
+  ],
+  "controls": [
+    "beta_60m_paper",
+    "log_market_equity",
+    "log_book_to_market",
+    "at_gr1_paper",
+    "gp_at_paper",
+    "momentum_12_1"
+  ],
+  "historical_predictor": "historical beta for same factor",
+  "industry_primary": "omitted because frozen SIC coverage is only 25%; required robustness later",
+  "inner_model": "RidgeCV",
+  "outcome": "forward broad_cm_equity_ex_market beta",
+  "outer_cv": "five-fold shuffled within vintage",
+  "outer_seed": 20240906,
+  "permutation_placebo": "1000 within-vintage permutations of embedding score; partial-correlation statistic",
+  "pool_overlapping_windows": false,
+  "portfolio_returns_accessed": false,
+  "preprocessing": "median imputation and standardization fitted inside each outer training fold",
+  "primary_nested_comparison": "baseline_plus_text_plus_embedding minus baseline_plus_text",
+  "report_vintages_separately": true,
+  "scenario_13a_scores_accessed": false,
+  "signal_columns": {
+    "embedding": "embedding_signed",
+    "hybrid": "hybrid_score",
+    "text": "net_score"
+  },
+  "version": "thematic_beta_prediction_v1"
+}

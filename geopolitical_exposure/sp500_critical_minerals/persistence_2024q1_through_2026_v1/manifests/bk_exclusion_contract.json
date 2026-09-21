@@ -1,0 +1,13 @@
+{
+  "affected_portfolios": [
+    "uncapped_long_only",
+    "uncapped_long_short",
+    "uncapped_beta_neutral_long_short"
+  ],
+  "excluded_security": "BK",
+  "exclusion_start": "2026-01",
+  "permco": 20265,
+  "reason": "surviving security lacks a defensible 2026 return series in downloaded sources",
+  "treatment": "remove from affected leg and renormalize remaining frozen weights",
+  "zero_return_imputed": false
+}

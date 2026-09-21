@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "reviewer_type": "independent_model_review",
+  "principle": "Preserve original responses; apply only documented validator exceptions or exact contiguous quote replacements.",
+  "documents": {
+    "0001002910-24-000090": {
+      "accepted_issues": ["exposure_1:possible_intermediary_marked_direct"],
+      "rationale": "The exposure is Ameren Missouri's own consumption of enriched uranium; a separate reference to natural gas customers triggered the lexical flag."
+    },
+    "0000037996-24-000144": {
+      "accepted_issues": ["exposure_1:possible_intermediary_marked_direct"],
+      "rationale": "Ford directly acquires and uses the named raw-material inputs; supplier procurement does not make Ford's own input dependence indirect.",
+      "quote_replacements": {
+        "2": "To facilitate access to the raw materials and other components necessary for the production of electric vehicles, Ford has entered into and may, in the future, enter into multi-year commitments to raw material and other suppliers"
+      }
+    },
+    "0001002910-24-000101": {
+      "accepted_issues": ["exposure_1:possible_intermediary_marked_direct"],
+      "rationale": "Ameren Missouri directly consumes enriched uranium for generation; the customer language refers to a different commodity in the same sentence."
+    },
+    "0000107815-24-000248": {
+      "accepted_issues": ["exposure_1:possible_intermediary_marked_direct"],
+      "rationale": "The filing explicitly states that both the firm and its customers can benefit; the firm's own policy benefit supports direct exposure."
+    },
+    "0001002910-24-000111": {
+      "accepted_issues": ["exposure_1:possible_intermediary_marked_direct"],
+      "rationale": "Ameren Missouri directly consumes enriched uranium for generation; the customer reference concerns natural gas rather than the uranium channel."
+    },
+    "0000723125-24-000047": {
+      "accepted_issues": [],
+      "rationale": "The relationship is supported, but the evidence excerpt is shortened to comply with the frozen 60-word limit.",
+      "quote_replacements": {
+        "1": "China has in the past restricted export of certain of these materials and may in the future continue to restrict or stop exporting these materials, and as a result, our suppliers’ ability to obtain such supply may be constrained"
+      }
+    }
+  }
+}

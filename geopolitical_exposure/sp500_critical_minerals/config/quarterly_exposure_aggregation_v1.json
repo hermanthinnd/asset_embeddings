@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "information_cutoff": "SEC filing availability date must not exceed portfolio formation cutoff",
+  "baseline_rule": "10-K exposure remains available in later vintages; silence in a 10-Q does not erase it",
+  "deduplication_rule": "Within firm-vintage-mechanism-direction retain the latest filing, breaking ties by component score and document id",
+  "eligible_materiality": ["core", "meaningful"],
+  "eligible_status": ["existing", "planned"],
+  "minimum_confidence": 0.75,
+  "minimum_strength": 0.50,
+  "materiality_weight": {"core": 1.0, "meaningful": 0.75, "incidental": 0.0, "insufficient": 0.0},
+  "directness_weight": {"direct": 1.0, "first_order_indirect": 0.8, "second_order_indirect": 0.6},
+  "status_weight": {"existing": 1.0, "planned": 0.8, "contingent": 0.0, "hypothetical": 0.0},
+  "mixed_direction_allocation": 0.5,
+  "firm_score_rule": "maximum eligible component score by signed direction",
+  "seed_rule": "positive direction; eligible component; positive score at least 0.30",
+  "returns_accessed": false,
+  "embeddings_accessed": false
+}

@@ -1,0 +1,29 @@
+{
+  "aggregation": "latest available firm-mechanism evidence by quarter; maximum relatedness mechanism for overall firm score",
+  "broad_input_sha256": "eead420ccdeab9cabdee7796f93e095e73eec7796594af4c218f7899e86a3a26",
+  "broad_seed_provenance": "previously frozen accepted records plus the pre-existing 0.30 provisional threshold",
+  "dimensions": 10,
+  "embedding_models": [
+    "rs_binary",
+    "rs_l_min"
+  ],
+  "enriched_input_sha256": "0294688f903a5d166df123bfbc5642d45da366dc809e95822cab27d4e4bbd6ec",
+  "incremental_evaluation_universe": "excludes union of all broad and enriched seed firms",
+  "new_human_adjudication_used": false,
+  "outcomes_accessed": false,
+  "propagation": "cosine similarity weighted by automated seed score and normalized by absolute seed weight",
+  "sector_enriched_human_adjudication_used": false,
+  "seed_specifications": [
+    "broad",
+    "sector_enriched",
+    "combined"
+  ],
+  "sha256": "75b927535d849fc7072d300971331ced6acb16b900d67f47a990f19fff7e6f46",
+  "stage": "three_seed_specification_propagation",
+  "vintages": [
+    "2024q1",
+    "2024q2",
+    "2024q3",
+    "2024q4"
+  ]
+}

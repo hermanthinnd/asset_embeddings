@@ -12,6 +12,8 @@ This repository contains an end-to-end replication of Gabaix, Koijen, Richmond, 
 - `Active_Passive_Extension_Summary.ipynb` — readable, results-focused account of the extension.
 - `Pipeline_Validation_3Q.ipynb` — three-quarter pipeline validation.
 - `geopolitical_exposure/` — transcript-ready proof of concept using pre-event corporate text and holdings embeddings to identify direct and latent geopolitical exposures.
+- `geopolitical_exposure/quarterly_sec_pilot/` — quarterly SEC-filing pilot that develops the critical-minerals extraction and seed-design workflow.
+- `geopolitical_exposure/sp500_critical_minerals/` — point-in-time S&P 500 validation combining evidence-grounded LLM labels, asset-embedding propagation, frozen portfolios, thematic-factor tests, and forward performance through August 2026.
 - `src/`, `scripts/`, and `tests/` — reusable project code and supporting checks.
 
 ## Data availability
@@ -28,8 +30,12 @@ The repository retains the executable notebooks, methodological documentation, r
 
 The geopolitical application begins with `geopolitical_exposure/00_Research_Design.ipynb` and `geopolitical_exposure/01_Event_and_Data_Audit.ipynb`. Its text adapter accepts SEC filings now and earnings-call transcripts later without changing the downstream seed, embedding, or event-study interfaces.
 
+For the completed critical-minerals application, begin with `geopolitical_exposure/sp500_critical_minerals/README.md`. The repository contains the executed notebooks, versioned prompts and schemas, notebook builders, and selected figures. Raw SEC filings, model-response envelopes, WRDS extracts, and row-level generated artifacts remain local.
+
 ## Main findings
 
 Holdings-based embeddings explain economically meaningful variation in relative valuation and contribute information beyond standard firm characteristics. Model performance is task-specific: global recommender systems are strongest for relative valuation, while Word2Vec is particularly effective for masked portfolio prediction.
 
 In the active/passive extension, market-distinctive ownership is more important than trading frequency. Passive-like portfolios are easier to reconstruct, but active portfolios produce more valuation-informative low-dimensional embeddings.
+
+In the critical-minerals extension, the LLM supplies evidence-grounded directional seeds and the embeddings broaden those seeds into diversified thematic portfolios. The frozen 2024Q1 long-only portfolios retained statistically significant critical-minerals sensitivity with materially lower volatility and drawdowns than the concentrated minerals ETF benchmark. This is evidence of useful thematic diversification, not proof of persistent abnormal returns.

@@ -1,0 +1,18 @@
+{
+  "design_version": "long_short_hybrid_completion_v1",
+  "status": "completion of methods prespecified in sp500_experiment_design_v1.json; constructed after 12G outcomes were viewed",
+  "embedding": "RS-L-Min 10D cosine similarity",
+  "similarity_threshold": "quarter-specific 95th percentile frozen in 12F",
+  "neighbors_per_seed": 5,
+  "direct_seed_threshold": 0.30,
+  "long_short_capital": {"long": 1.0, "short": -1.0},
+  "direct_rule": "among firms meeting either directional seed flag, assign each firm exclusively to the sign of its pre-existing net_score; exclude exact zero ties; long positive net scores and short negative net scores",
+  "embedding_rule": "exclude all direct seeds; signed score equals strongest positive propagation minus strongest negative propagation; select top positive and bottom negative scores using corresponding covered seed counts",
+  "hybrid_rule": "equal-weight average of within-vintage z-scored direct net text score and signed embedding propagation score; select corresponding positive and negative covered-seed counts",
+  "hybrid_long_only_rule": "50 percent direct-positive sleeve and 50 percent positive embedding-discovery sleeve",
+  "return_horizon": "three frozen forward months",
+  "return_convention": "firm buy-and-hold, then equal weight within legs",
+  "placebos": 100,
+  "random_seed": 20240905,
+  "tuning_after_12g": false
+}

@@ -1,0 +1,66 @@
+{
+  "artifacts": [
+    {
+      "artifact": "frozen_portfolio_membership.parquet",
+      "bytes": 113751,
+      "rows": 14720,
+      "sha256": "b7ca6134ed8680c0ffef230d4f034e33de5d0c9348907c864fe63440b89733fd"
+    },
+    {
+      "artifact": "long_short_performance.parquet",
+      "bytes": 10076,
+      "rows": 144,
+      "sha256": "119987d2a342188cad86dd54c143e92c0682c8af9f2578db825f6652c077b65e"
+    },
+    {
+      "artifact": "portfolio_leg_performance.parquet",
+      "bytes": 15133,
+      "rows": 288,
+      "sha256": "c07fc7cf6c139efcef7d20c615f06bc384ce04b6a9a78a39324249243d337e43"
+    },
+    {
+      "artifact": "portfolio_monthly_returns.parquet",
+      "bytes": 23942,
+      "rows": 2484,
+      "sha256": "c150cb1d68f2f845b79268eff59078fabd1cf0a835d79d6e95e8595c68fbd98a"
+    }
+  ],
+  "crsp_cutoff": "2025-12-31",
+  "crsp_source": "crsp_a_stock.msf_v2",
+  "llm_and_embedding_signals_reestimated": false,
+  "long_start": {
+    "2024q1": "2024-06-01",
+    "2024q2": "2024-09-01",
+    "2024q3": "2024-12-01",
+    "2024q4": "2025-04-01"
+  },
+  "portfolio_weighting": "equal_weighted_monthly",
+  "score_sha256": "f0fab057c8772d01ea4022bc1878db7c39d8a799d487459bbfe8b92d630364fa",
+  "seed_sha256": "8a2cfbb6883463c2d2282c27d0f144881766fd9599f2d337dd7929887abdba7b",
+  "sha256": "15711fbbb5102a47642ccc39fc3171bfe7658c708befd83d3b79fc673a44a680",
+  "stage": "2025_2026_forward_performance",
+  "tail_fraction": 0.1,
+  "windows": {
+    "2024q1": [
+      "2024-06-30",
+      "2024-07-31",
+      "2024-08-31"
+    ],
+    "2024q2": [
+      "2024-09-30",
+      "2024-10-31",
+      "2024-11-30"
+    ],
+    "2024q3": [
+      "2024-12-31",
+      "2025-01-31",
+      "2025-02-28"
+    ],
+    "2024q4": [
+      "2025-04-30",
+      "2025-05-31",
+      "2025-06-30"
+    ]
+  },
+  "yfinance_used": false
+}

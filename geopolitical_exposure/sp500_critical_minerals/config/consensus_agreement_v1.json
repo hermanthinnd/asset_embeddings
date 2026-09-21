@@ -1,0 +1,16 @@
+{
+  "design_version": "text_embedding_consensus_v1",
+  "status": "exploratory robustness requested after 12G and 12H outcomes were viewed",
+  "text_direction": "sign of pre-existing quarterly net_score among firms meeting either original seed flag",
+  "embedding_support": "RS-L-Min 10D cosine propagation from all other directionally resolved LLM seeds; target firm's own seed is excluded",
+  "similarity_threshold": "frozen quarter-specific 12F random-pair q95",
+  "consensus_long": "positive text direction and positive leave-one-seed-out embedding support",
+  "consensus_short": "negative text direction and negative leave-one-seed-out embedding support",
+  "ties_and_no_support": "excluded",
+  "weighting": "equal weight within leg; long-short is +100 percent long and -100 percent short",
+  "matched_text_comparator": "same leg counts, highest absolute net text scores within direction",
+  "placebos": "100 random matched-cardinality draws from embedded LLM-labeled firms within the same text direction",
+  "return_horizon": "same frozen three-month windows as 12G and 12H",
+  "parameters_tuned_after_outcomes": false,
+  "random_seed": 20240906
+}

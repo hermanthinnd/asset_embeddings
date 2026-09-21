@@ -1,0 +1,14 @@
+{
+  "all_gates_passed": true,
+  "beta_neutral_robustness": true,
+  "capped": false,
+  "outcome_based_selection": false,
+  "rule_sha256": "51b1e62d3813d0f2655a9cc1443292f2ed22da20223210d1272ab3af7d3e083d",
+  "stage": "uncapped_seeded_embedding_v1",
+  "vintages": [
+    "2024q1",
+    "2024q2",
+    "2024q3",
+    "2024q4"
+  ]
+}

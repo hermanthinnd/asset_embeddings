@@ -1,0 +1,12 @@
+{
+  "HAC_lags": 5,
+  "controls": "daily FF5 plus momentum plus frozen 14A theme factor",
+  "frequency": "daily",
+  "long_only_y": "return minus RF",
+  "long_short_y": "raw self-financing return",
+  "no_reselection": true,
+  "primary_panel": "concatenated calendar time by method",
+  "secondary_panel": "each vintage",
+  "version": "factor_controlled_portfolio_attribution_v1",
+  "windows": "exact frozen three-month forward windows"
+}

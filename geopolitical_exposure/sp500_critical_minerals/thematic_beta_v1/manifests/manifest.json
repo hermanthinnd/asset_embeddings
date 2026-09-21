@@ -1,0 +1,10 @@
+{
+  "beta_rows": 16004,
+  "common_cutoff": "2025-12-31",
+  "design_sha256": "1dcb132c2b57988c713a58d859239975ad42af3fb57b60efeef848030e8d3fa9",
+  "exposure_scores_joined": false,
+  "portfolio_results_accessed": false,
+  "primary_estimated": 3986,
+  "primary_factor": "broad_cm_equity_ex_market",
+  "stage": "firm_thematic_beta_estimation_v1"
+}

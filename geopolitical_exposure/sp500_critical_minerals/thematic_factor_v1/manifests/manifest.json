@@ -1,0 +1,11 @@
+{
+  "contract_sha256": "5c64b10d14056968e2cc659ce662e2dd2c665fcfc740c9cf8158669e4a49b9e9",
+  "firm_returns_accessed": false,
+  "first_date": "2022-01-04",
+  "last_date": "2025-12-31",
+  "observations": 1002,
+  "portfolio_results_accessed": false,
+  "primary_factor": "broad_cm_equity_ex_market",
+  "signal_sha256": "0ff8c58effb8f2813265bb45c307ee6d3dc42317327401daed39d64590e66492",
+  "stage": "independent_critical_minerals_factor_v1"
+}

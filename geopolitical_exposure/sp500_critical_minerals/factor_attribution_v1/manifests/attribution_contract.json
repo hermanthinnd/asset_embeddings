@@ -1,0 +1,28 @@
+{
+  "annualization": "monthly alpha times 12; volatility times square root of 12",
+  "holding_windows": "unchanged frozen 12-month forward windows",
+  "inference": "OLS with HAC covariance, maximum lag 2",
+  "long_only_dependent_return": "portfolio return minus one-month risk-free rate",
+  "long_short_dependent_return": "raw self-financing portfolio return",
+  "minimum_observations": "number of regressors plus 3",
+  "models": [
+    "mean_only",
+    "capm",
+    "capm_plus_cm",
+    "ff5",
+    "ff5_mom",
+    "ff5_mom_cm"
+  ],
+  "monthly_portfolio_return": "sum of frozen beginning-of-test weights times CRSP firm monthly returns; no outcome-driven reweighting",
+  "no_model_or_portfolio_selection": true,
+  "portfolio_sources": [
+    "long_short_hybrid_v1/frozen_portfolio_membership.parquet",
+    "consensus_agreement_v1/frozen_consensus_membership.parquet"
+  ],
+  "primary_factor": "broad_cm_equity_ex_market, frozen in 14A",
+  "primary_panel": "calendar-time equal average of all live vintages within method",
+  "return_source": "quarterly_sec_pilot/forward_performance_2025_2026/data/processed/crsp_firm_monthly_through_cutoff.parquet",
+  "secondary_panel": "each vintage separately; never pooled as independent observations",
+  "standard_factors": "current monthly US Fama-French 5 factors and momentum from Kenneth French Data Library",
+  "version": "factor_controlled_portfolio_attribution_v1"
+}

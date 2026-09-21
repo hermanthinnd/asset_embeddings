@@ -1,0 +1,19 @@
+{
+  "all_gates_passed": true,
+  "artifacts": [
+    "bidirectional_seed_nominations.parquet",
+    "cross_vintage_summary.parquet",
+    "decision_gates.parquet",
+    "frozen_portfolio_membership.parquet",
+    "leg_attribution.parquet",
+    "manifest.json",
+    "matched_long_short_placebos.parquet",
+    "placebo_inference.parquet",
+    "portfolio_results.parquet",
+    "signed_signal_panel.parquet"
+  ],
+  "contract_sha256": "307da1a8d20f4fb6d9af64cc88a67bdfa81a530be5994416fb19e1704ce0e618",
+  "outcomes_previously_viewed": true,
+  "parameters_tuned_after_12g": false,
+  "stage": "long_short_hybrid_completion_v1"
+}

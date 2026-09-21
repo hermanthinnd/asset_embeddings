@@ -1,0 +1,59 @@
+{
+  "artifacts": [
+    {
+      "artifact": "quarterly_decomposition_scores.parquet",
+      "bytes": 1975874,
+      "rows": 181008,
+      "sha256": "bbc8a238ec8f56f600f5e73cc1c8bbae9f264ece5bd578d5d5f9fc7347def62c"
+    },
+    {
+      "artifact": "portfolio_constituents.parquet",
+      "bytes": 363471,
+      "rows": 26928,
+      "sha256": "590580d5ec81ee160783347d1ffce8e0ca3632b68b9c9ba04deee9c241be4e23"
+    },
+    {
+      "artifact": "ranking_and_constituent_stability.parquet",
+      "bytes": 12197,
+      "rows": 108,
+      "sha256": "2aaf1e2241982b21f63b8df64a0e605cc4a1116e2602746945db009070dd3036"
+    },
+    {
+      "artifact": "text_embedding_change_attribution.parquet",
+      "bytes": 5803,
+      "rows": 48,
+      "sha256": "76a7019f48d28e054f3ebab2403ccac08ee94f8bdd5bb7a3d1f3e34949f4021a"
+    },
+    {
+      "artifact": "publication_lagged_forward_returns.parquet",
+      "bytes": 189460,
+      "rows": 14503,
+      "sha256": "c7c60d7d984842d7fa709937a40beaf21240c60d1be4302502214febb5be586b"
+    },
+    {
+      "artifact": "primary_forward_performance.parquet",
+      "bytes": 8481,
+      "rows": 72,
+      "sha256": "74c6f5b61f28c141f57b6ee598be1038af8e88d2eb2c445afc9959c8a9e573af"
+    },
+    {
+      "artifact": "matched_permutation_results.parquet",
+      "bytes": 7942,
+      "rows": 72,
+      "sha256": "087fd5dbe7b131ece83699cf1265cc0104c2103135b9f982ea31589114b3e71d"
+    }
+  ],
+  "complete_primary_vintages": [
+    "2024q1",
+    "2024q2"
+  ],
+  "disclosure_lag_calendar_days": 60,
+  "incomplete_diagnostic_vintage": "2024q3",
+  "permutation_repetitions": 500,
+  "return_file_sha256": "6ded7832138f5633fad010f09b9e5957091eb7f4ca1ca6769d874b8c8a06c8e1",
+  "seed_firms_excluded_from_incremental_evaluation": true,
+  "sha256": "fec4b1cd198968635d3912431cfc3df9b5c9fa109435788f45e39574769c511d",
+  "stage": "quarterly_portfolio_evaluation_v1",
+  "unavailable_vintage": "2024q4",
+  "upstream_design_sha256": "75b927535d849fc7072d300971331ced6acb16b900d67f47a990f19fff7e6f46"
+}

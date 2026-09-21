@@ -1,0 +1,24 @@
+{
+  "design_version": "critical_minerals_sector_supplement_v1",
+  "sample_size": 50,
+  "selection_seed": 20240903,
+  "base_sample_excluded": true,
+  "common_four_quarter_embedding_presence_required": true,
+  "unique_exact_sec_ticker_match_required": true,
+  "industry_snapshot": "CRSP SIC at 2024Q4",
+  "industry_snapshot_note": "The supplement was designed after the broad-market text screen and is explicitly exploratory. It is never used to estimate population prevalence.",
+  "sector_buckets": {
+    "mining_primary_materials": [[1000, 1499], [3300, 3399]],
+    "chemicals_processing": [[2800, 2899]],
+    "industrial_equipment": [[3400, 3599]],
+    "electrical_electronics": [[3600, 3699]],
+    "transport_equipment": [[3700, 3799]],
+    "power_utilities": [[4900, 4999]]
+  },
+  "balancing_variables": ["sector_bucket", "q1_market_equity_quintile"],
+  "document_start": "2023-01-01",
+  "document_forms": ["10-K", "10-Q"],
+  "vintages": ["2024q1", "2024q2", "2024q3", "2024q4"],
+  "prompt_ontology_schema_reused_from_base": true,
+  "outcomes_accessed": false
+}

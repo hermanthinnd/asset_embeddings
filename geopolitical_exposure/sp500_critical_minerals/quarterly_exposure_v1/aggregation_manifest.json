@@ -1,0 +1,9 @@
+{
+  "contract_sha256": "f5e248c406ca5b715d9ed947b991f934f8ac1ddc6d510eae1a96c4db8de20313",
+  "embeddings_accessed": false,
+  "firm_quarters": 2001,
+  "negative_seed_firm_quarters": 164,
+  "positive_seed_firm_quarters": 65,
+  "returns_accessed": false,
+  "stage": "quarterly_exposure_aggregation_v1"
+}
